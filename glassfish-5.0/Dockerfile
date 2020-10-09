@@ -19,7 +19,5 @@ RUN         curl http://central.maven.org/maven2/org/glassfish/grizzly/grizzly-n
 RUN         curl http://central.maven.org/maven2/org/glassfish/grizzly/grizzly-npn-bootstrap/1.8/grizzly-npn-bootstrap-1.8.jar --output "$GLASSFISH_HOME/glassfish/modules/endorsed/grizzly-npn-bootstrap.jar"
 
 EXPOSE      8080 4848 8181
-
 WORKDIR     /usr/local/glassfish5
-
 CMD         asadmin start-domain --verbose
